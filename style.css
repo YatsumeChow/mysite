@@ -108,8 +108,24 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 }
 
 .canf_name {
-  writing-mode: vertical-rl;
+  writing-mode: horizontal-tb;
 }
+
+@media screen and (max-width: 768px) {
+  .round-two {
+      display: none;
+   }
+
+   .round-three {
+    display: none;
+   }
+
+   .canf_name {
+    display: none;
+   }
+}
+
+
 /* チームリスト */
 li{
   list-style: none;
@@ -174,4 +190,11 @@ li{
 
   option {
     color: #000;
+  }
+
+  @media screen and (max-width: 768px) {
+    .table {
+        display: block;
+     }
+ 
   }
